@@ -1,104 +1,658 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>MAINTENANCE WHITE</title>
-		<link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Hi+Melody&display=swap" rel="stylesheet">
-		<style type="text/css">
-		body{
-			background-color: white;
-		}
-		.complex{
-			position: center;
-			margin: 0px;
-			padding: 0px;
+<html lang="en">
 
-		}
-		.photo img{
-			margin-top: 0;
-			padding: 0;
-			width: 35%;
-		}
-		.container{
-			width: 70%;
-			margin-top: 0px;
-			padding: 2px;
-			color: #f5680a;
-			font-family: 'Fascinate Inline', cursive;
-			letter-spacing: 2px;
-			background-size: 80%;
-			border-bottom: 2px none;
-			border-radius: 5px;
-			box-shadow: #f5680a 0px 3px 5px ;
-			animation: area 8s infinite;
-		}
-		.container h1{
-			margin: 0px;
-			padding: 0px;
-		}
-		.text h2{
-			font-family: 'Hi Melody', cursive;
-			margin-top: 15px;
-			margin-bottom: 0;
-			text-align: center;
-			letter-spacing: 3px;
-			color: black; 
-			animation: txtone 4s infinite;
-		}
-		.txt-two{
-			animation: txttwo 4s infinite;
-			animation-delay: 2s;
-		}
-		.dev{
-			width: 20%;
-			margin: 0;
-			padding: 0;
-			text-align: right;
-			font-family: 'Ubuntu Mono', monospace;
-			position: fixed;
-			left: 78%;
-			bottom: 0;
-			color: #f5680a;
-		}
-		@keyframes area{
-			0%{box-shadow: #f5680a 0px 3px 5px;}
-			25%{box-shadow: yellow 0px 3px 5px ;}
-			50%{box-shadow: none; border: none}
-			75%{box-shadow: grey 0px 3px 5px ;}
-		}
-		@keyframes txtone{
-			0%{color: black;}
-			25%{-ms-transform: skewY(4deg); transform: skewY(4deg);}
-			50%{color: black;}
-			75%{color: #f5680a;-ms-transform: skewY(-4deg); transform: skewY(-4deg);}
-		}
-		@keyframes txttwo{
-			0%{color: black;}
-			25%{-ms-transform: skewX(-7deg); transform: skewX(-7deg);}
-			50%{color: black;}
-			75%{color: #f5680a; -ms-transform: skewX(7deg); transform: skewX(7deg);}
-		}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-		</style>
-	</head>
-	<body>
-		<center>
-		<div class="photo">
-			<img src="rocket.gif">
-		</div>
-	  <div class="complex">
-		<div class="container">
-			<h1>Website Under Construction</h1>
-		</div>
-		<div class="text">
-			<h2>
-				Coming Soon and will be ready by Week 6...Cher🥸<br>
-				<span class="txt-two">Please wait & don't worry :)</span>
-			</h2>
-		</div>
-	  </div>
-		<!-- footer -->
-		<div class="dev">
-			<h5>Copyright &copy; Github<br>Developed by Swan Htet Aung</h5>
-		</div>
-	</body>
+    <title>Swan's Portfolio</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+  />
+
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- home function -->
+    <div id="header">
+        <div class="container box">
+            <nav>
+                
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#Achievements">Achievements</a></li>
+
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+
+                <div class="loader  animate__animated animate__slideInDown">
+                    <div class="snow">
+                        <span style="--i:11"></span>
+                        <span style="--i:12"></span>
+                        <span style="--i:15"></span>
+                        <span style="--i:17"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                    </div>
+                </div>
+                <div class="loaader  animate__animated animate__slideInDown">
+                    <div class="snow">
+                        <span style="--i:11"></span>
+                        <span style="--i:12"></span>
+                        <span style="--i:15"></span>
+                        <span style="--i:17"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                    </div>
+                </div>
+                <div class="setdiv  animate__animated animate__slideInUp">
+                    <h2>Hi, I'm <br></h2>
+                    <h1 style="font-size: 100px;"><span>Swan Htet Aung</span></h1>
+                    <p>Student🧑‍💻 - Software Engineer💻</p>
+                    <!-- <a href="https://git.io/typing-svg"><img
+                            src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&width=435&lines=I'm+a+Software+Engineer+Student;I+am+also+a+Software+Developer+;Love+to+take+Photos+and+write+blogs"
+                            alt="Typing SVG" /></a> -->
+
+                    <div class="wrapper">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="notification"
+                onclick="window.location.href = 'https://drive.google.com/file/d/1kLgjjzp-QV0_T0wh7G2JMoD9wPOvtpkG/view?usp=sharing';">
+                <p>Would you like to check my CV ?😊</p>
+                <span class="notification__progress"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="Section-Home/menu.js"></script>
+
+    <!-- home function -->
+
+    <div id="progress">
+        <span id="progress-value" class="gotoTop">
+            <?xml version="1.0" ?>
+            <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
+                height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1"
+                viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path
+                    d="M128.4,189.3L233.4,89c5.8-6,13.7-9,22.4-9c8.7,0,16.5,3,22.4,9l105.4,100.3c12.5,11.9,12.5,31.3,0,43.2  c-12.5,11.9-32.7,11.9-45.2,0L288,184.4v217c0,16.9-14.3,30.6-32,30.6c-17.7,0-32-13.7-32-30.6v-217l-50.4,48.2  c-12.5,11.9-32.7,11.9-45.2,0C115.9,220.6,115.9,201.3,128.4,189.3z" />
+            </svg>
+        </span>
+    </div>
+    <script src="Section-Home/Scroll-Top.js"></script>
+
+
+    <!-- about section -->
+    <div id="about">
+        <div class="containers box">
+            <div class="row">
+                <div class="col-1">
+                    <h1 class="sub-title">About Me</h1>
+
+                    <div class="sub-line">
+                        <p>
+                            I am currently studying Information Technology in Temasek Polytechnic (TP). Besides, I am a <b>Software Developer💻</b> with a passion for coding and
+                            problem solving.
+                        </p>
+                    </div>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('others')">Others</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Competitive Programing : <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span>App Development : <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white">
+                                    <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white"
+                                         alt="" srcset="">
+                                    
+                                </div>
+                            </li>
+                            <li><span>Web Development : <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
+                                    <img 
+                                        src="https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge" >
+                                </div>
+                            </li>
+                            <li><span>Graphic & UI/UX Designing : <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/Adobe%20Lightroom-31A8FF?style=for-the-badge&logo=Adobe%20Lightroom&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white">
+                                    <img 
+                                        src="https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6" alt="" srcset="">
+                                </div>
+                            </li>
+                            <li><span> Collaboration : <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="others">
+                        <ul>
+                            <li><span>Game Development <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span>Software Development: <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
+                                    <img
+                                        src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white">
+
+                                </div>
+                            </li>
+                            <li><span>Database Management <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span>Office Management <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/Microsoft_Word-2B579A?style=for-the-badge&logo=microsoft-word&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/Microsoft_PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white"><br>
+                                    <img
+                                        src="https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white">
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span class="Education"><b>Diploma in Information Technology</b> </span><br>
+
+                                <p>Temasek Polytechnic </p>
+                                <p align="left">2022 - Current <span class="cg">(CGPA - 3.95)</span> </p>
+
+
+                            </li><br>
+                            
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span class="Education"><b>Looking For Intership Oppurtunity</b> </span><br>
+
+                                <p>Check Out My Resume</p>
+                                <button class="button"
+                                    onclick="window.location.href = 'https://drive.google.com/file/d/1Hms6goi7ICZdVALEIZ3yXP_gPKgklTPm/view?usp=sharing';">
+                                    <span class="button_lg">
+                                        <span class="button_sl"></span>
+                                        <span class="button_text">Download Now</span>
+                                    </span>
+                                </button>
+
+
+                            </li><br>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-2">
+                    <img src="images/about.png" style="margin-top: 220px;">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <!-- about section -->
+
+    
+
+    <!-- Projects section -->
+    <div id="projects">
+        <div class="containers box">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="service-list">
+                
+                    <div class="card">
+                        <div class="card9" >
+                            <div class="position">
+                                <img align="center" class="icon" src="images/Foodo.png" width="360" height="220"><br><br>
+                                <span class="p_hcolor">Foodo</span><br><br><br><br>
+                                <p>
+                                    A Restaurant Review Website where users can explore, give reviews and share their favourite restaruants
+                                </p><br><br><br><br>
+                                <p>
+                                    <b><span class="p_color">Langauge :</span></b> HTML , CSS <br>
+                                    <b><span class="p_color">Framework :</span></b> Vanila JS <br>
+                                    <b><span class="p_color">Environment :</span></b> VS Code <br>
+
+                                </p>
+
+                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                
+                <div>
+                    <div class="card"
+                        >
+                        <div class="card8">
+                            <div class="position">
+                                <img align="center" class="icon" src="images/CADV.png" width="360" height="220">
+                                <br><br>
+                                <span class="p_hcolor ggwp"> Tasktify </span>
+                                <p><br><br><br>
+                                    A task management website where students can manage their tasks, can disussions with their fellow students,Promodoro Timer and get reminded for their upcoming task and deadline
+                                </p><br><br>
+                                <p>
+
+                                    <b><span class="p_color">Frontend :</span></b> React , CSS , HTML, Javascript <br>
+                                    <b><span class="p_color">Database :</span></b> MySQL , DynamoDB
+                                </p>
+
+                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="card" >
+                        <div class="card4">
+                            <div class="position">
+                                <img align="center" class="icon" src="images/BudgetBuddy.png" width="360" height="220"><br><br>
+                                <span class="p_hcolor">Budget Buddy</span> <br><br><br>
+                                <p>
+                                   A budget tracking website where users can track their incoms and expenses to virtualise thier spending habits.
+                                </p><br><br><br><br>
+                                <p>
+                                    <b><span class="p_color">Langauge :</span></b> Javascript, Html ,CSS <br>
+                                    <b><span class="p_color">Database :</span></b> MongoDB <br>
+                                    <b><span class="p_color">Framework :</span></b> React
+                                </p>
+
+                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <
+                <div class="card" onclick="window.location.href = 'https://github.com/Sumonta056/EVA_BOT';">
+                    <div class="card7">
+                        <div class="position">
+                            <img align="center" class="icon" src="images/bot.gif" width="190">
+                            <span class="p_hccolor">Eva Talking Bot</span>
+                            <p>
+                                A virtual bot that talks with you and makes your daily life much easier by
+                                doing things for you
+                            </p>
+                            <p>
+                                <b><span class="p_color">Langauge :</span></b> Python <br>
+                                <b><span class="p_color">Environment :</span></b> Pycharm <br>
+                            </p>
+
+                            <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card">
+                        <div class="card3">
+                            <div class="position">
+                                <img align="center" class="icon" src="images/MBAP.png" width="190"><br><br>
+                                <span class="p_hccolor">SayNoWaste</span><br><br><br>
+                                <p>
+                                    A mobile application where users can get reminders about the food that are going to expire and share surplus food with those who are needy
+                                </p>
+                                <p><br><br>
+                                    <b><span class="p_color">Langauge :</span></b> Flutter, FireStore<br>
+                                    <b><span class="p_color">Environment :</span></b> VS Code <br>
+                                </p>
+
+                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card" onclick="window.location.href = 'https://sumonta056.github.io/GitHub-Tutorial/';">
+                        <div class="card60">
+                            <div class="position">
+                                <img align="center" class="icon" src="images/MyDearReminderBot.PNG" width="190">
+                                <span class="p_hcccolor">MyDearReminderBot</span><br><br><br><br>
+                                <p>
+                                    A telegram bot to remind about bus arrival time and assignment deadlines
+                                </p><br><br><br>
+                                <p>
+                                    <b><span class="p_color">Langauge :</span></b>Node.js<br>
+                                    <b><span class="p_color">Database :</span></b>SQL<br>
+                                    
+                                </p>
+
+                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- <div>
+                    <div class="card">
+                        <div class="card8">
+                            <div class="position">
+                                <br><br><br><br>
+                                <img align="center" class="icon" src="images/soon.png" width="180">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects section -->
+
+
+    <!-- achivements section -->
+
+
+    <div id="Achievements" class="box">
+        <h1 class="sub-projects">Achievements</h1>
+        <div class="achievement1">
+            <div class="cards">
+                <div class="image-content">
+                    <span class="overlay">
+
+                    </span>
+
+                    <div class="card-image">
+                        <img src="images/tp.png" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Director's List Award For AY 22-23 </h2><br><br>
+                    <p class="description">Top 10% of the cohort
+
+                    </p><br><br>
+                    <button class="button"
+                        onclick="window.location.href = 'https://www.linkedin.com/feed/update/urn:li:activity:7026935587148378112/';">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">read more </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="cards1">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="images/pioi.png" class="card-img" width="100px" height="50px">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Silver Medal</h2>
+                    <p class="description"> A Competitive Programming Competition that tests problem-solving skills as well as knowledeg of data structures and algorithms
+                    </p>
+                    <button class="button"
+                        onclick="window.location.href = 'https://www.stopstalk.com/user/profile/sumonta056';">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">read more </span>
+                        </span>
+                    </button>
+
+                </div>
+            </div>
+            <div class="cards3">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="images/cloud.png" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name11">Google Cloud Fundamentals: Core Infrastructure Certificate</h2>
+
+                    <p class="descriptions11">
+                        
+                    </p>
+                    <br><br><br>
+                    <button class="button" onclick="window.location.href = 'https://drive.google.com/file/d/1aQP5JM_-c8WnoYNeiX6HrJxSKtM3g9H4/view?usp=drive_link';">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">read more </span>
+                        </span>
+                    </button>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="achievement1">
+            <div class="card11">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="images/PSM I.png" class="card-img">
+                    </div>
+                </div><br><br>
+                <div class="card-content">
+                    <h2 class="name">Professional Scrum Master Certificate (PSM I)</h2>
+                    <p class="description">
+
+                    </p>
+                    <br><br><br>
+                    <button class="button"
+                        onclick="window.location.href = 'https://www.credly.com/badges/e221483c-85ff-4c98-a0a8-ea799a6d3938/linked_in_profile';">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">read more </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="card12">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="images/udemy.png" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">The Complete Web Developer 2023 BootCamp Certification</h2>
+                    <p class="description"> 
+
+                    </p>
+                    <button class="button"
+                        onclick="window.location.href = 'https://www.udemy.com/certificate/UC-93fe94e4-5648-4331-ba0a-f4e0998c4fd7';">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">read more </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+           
+
+        </div>
+
+
+    </div>
+
+
+
+   
+
+
+
+
+  
+
+
+
+    </div>
+
+
+    <script src="Section-Home/animation.js"></script>
+
+    <br><br><br><br>
+
+    <div class="end">
+        <p>© 2023 Swan Htet Aung. All rights reserved.</p>
+    </div>
+
+
+
+</body>
+
 </html>
